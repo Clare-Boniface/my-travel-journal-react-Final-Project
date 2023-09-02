@@ -1,0 +1,185 @@
+* {
+     box-sizing: border-box;
+}
+
+ h1, h2, p {
+     margin: 0;
+     padding: 0;
+}
+
+ body {
+     font-family: Inter, sans-serif;
+     margin: 0;
+     padding: 0;
+     min-width: 300px;
+}
+
+ .container {
+     max-width: 800px;
+     margin: 0 auto;
+     padding: 1.8em;
+}
+
+ .flex{
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+}
+
+ header {
+     background-color: #f55a5a;
+     color: white;
+     width: 100%;
+     padding: 1.3em 0;
+}
+
+ .header-logo {
+     flex-direction: row;
+     justify-content: center;
+     gap: 7px;
+}
+
+ .header-icon {
+     width: 24px;
+     height: 24px;
+}
+
+ .header-title {
+     font-size: 0.9rem;
+     font-weight: 500;
+     letter-spacing: -1.1px;
+}
+
+ .card {
+     margin-bottom: 2em;
+     color: #2b283a;
+     font-size: 0.65rem;
+}
+
+ .photo-image {
+     display: block;
+     width: 100%;
+     border-radius: 5px;
+     object-fit: cover;
+}
+
+ .card-details {
+     align-items: flex-start;
+}
+
+ .country-details, .date-details {
+     flex-direction: row;
+}
+
+ .country-details {
+     margin-top: 1em;
+}
+
+ .card-country {
+     letter-spacing: 1.7px;
+     margin: 0 1.1em 0 0.4em;
+}
+
+ .card-title {
+     font-size: 1.6rem;
+     font-weight: 700;
+     margin: 0.3em 0;
+}
+
+ .date-details {
+     font-weight: 700;
+}
+
+ .card-description {
+     line-height: 150%;
+     margin-top: 0.9em;
+}
+
+ footer {
+     background-color:#D8E2DC;
+     font-size: 0.65rem;
+     width: 100%;
+     text-align: center;
+     padding: 1em;
+     font-weight: bold;
+}
+
+ .footer-details{
+     font-size: 0.5rem;
+     margin-top:0.5em;
+     font-weight:400;
+}
+
+ .card-google-link a {
+     color: #918e9b;
+     text-decoration-line: underline;
+}
+
+ .card-google-link a:visited{
+     color: #918e9b;
+}
+
+ .card-google-link a:hover, .card-google-link a:focus {
+     color: darkred;
+}
+
+ .card-google-link a:active{
+     color: #918e9b;
+}
+
+ @media (min-width: 550px) {
+     .card {
+         flex-direction: row;
+    }
+    
+     .photo-image {
+         width: 125px;
+         height: 168px;
+    }
+    
+     .card-details {
+         margin-left: 1.2em;
+    }
+    
+     .card-description {
+         font-size: 0.8rem;
+    }
+    
+     .country-details {
+         margin: 0;
+    }
+}
+
+
+ @media (min-width: 768px) {
+     .container {
+         padding: 2em;
+    }
+    
+     .photo-image {
+         width: 250px;
+         height: 300px; 
+    }
+    
+     .card {
+         margin-bottom: 2em;
+    }
+    
+     .card-country, .date-details {
+         font-size: 1.2rem;
+    }
+    
+     .card-google-link, .card-description {
+         font-size: 1rem;
+    }
+    
+     .card-description {
+         margin-top: 1em;
+    }
+    
+     .card-title {
+         font-size: 2rem;
+         margin: 1em 0;
+    }
+}
+
